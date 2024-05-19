@@ -14,7 +14,7 @@ All dependencies can be installed with your package manager.
 
 ## Installation
 ```
-sudo wget https://raw.githubusercontent.com/shahin8r/iptv/master/iptv -qO /usr/local/bin/iptv && sudo chmod +x /usr/local/bin/iptv
+sudo wget https://raw.githubusercontent.com/darkgeek/iptv/master/iptv -qO /usr/local/bin/iptv && sudo chmod +x /usr/local/bin/iptv
 ```
 
 Run `iptv` with your playlist URL to load all the channels (only needed on first run).
