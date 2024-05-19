@@ -1,13 +1,13 @@
 # iptv
-`iptv` is a CLI IPTV player for M3U playlists with search function by leveraging on `rofi`, suitable for both desktop and TV.
+`iptv` is a CLI IPTV player for M3U playlists with fuzzy finding, right in your terminal.
 
-![iptv](https://github.com/darkgeek/iptv/blob/master/screenshot.png?raw=true)
+![iptv](https://user-images.githubusercontent.com/4785263/228887981-3efb80a9-e40d-4076-b234-8fa737527018.gif)
 
 The playlist will be updated once a day whenever you run `iptv`.
 
 ## Dependencies
 - [curl](https://github.com/curl/curl)
-- [rofi](https://github.com/davatorium/rofi)
+- [fzf](https://github.com/junegunn/fzf)
 - [mpv](https://github.com/mpv-player/mpv)
 
 All dependencies can be installed with your package manager.
