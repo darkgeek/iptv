@@ -1,5 +1,5 @@
 #!/bin/bash
-command -v rofi >/dev/null 2>&1 || { echo >&2 "rofi required but not installed"; exit 1; }
+command -v fzf >/dev/null 2>&1 || { echo >&2 "fzf required but not installed"; exit 1; }
 command -v mpv >/dev/null 2>&1 || { echo >&2 "mpv required but not installed"; exit 1; }
 
 m3u=$1
@@ -70,7 +70,7 @@ if [[ $(find "$channels_file" -mtime +1) ]]; then
   save_channels
 fi
 
-selected=$(cat "$channels_file" | sed 's/ [^ ]*$//' | rofi -dmenu)
+selected=$(cat "$channels_file" | sed 's/ [^ ]*$//' | fzf)
 
 if [ ! -n "$selected" ]; then
   exit 1
