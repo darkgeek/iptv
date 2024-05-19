@@ -92,4 +92,6 @@ if [ -f "$player_pid_file" ]; then
 fi
 
 mpv "$selected_channel_url" > /dev/null 2>&1 &
-echo $! > "$player_pid_file"
+pid=$!
+echo $pid > "$player_pid_file"
+tail --pid=$pid -f /dev/null
